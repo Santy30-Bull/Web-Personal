@@ -1,0 +1,20 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+section img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+section img:hover{
+    cursor: crosshair;
+    filter: grayscale(100%);
+    opacity: 1;
+    width: 25%;
+}
