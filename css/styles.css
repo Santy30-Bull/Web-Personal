@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    align-self: center;
+    background-color: #ffffff21;
+}
+h1{ 
+    text-align: center;
+    margin-top: 0px; /* puedes hacer margin a todos los lados*/
+    background-color: #02e6ff8f;
+}
+.menu{
+    background-color: #02e6ff8f;
+    width: 70%; /* 100% del ancho de la pantalla. Igual puedes poner varios porcentajes */
+    margin: 0 auto; /* 0 arriba y abajo, auto a los lados */
+    border-radius: 10px;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#avoid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin : 0 auto;
+    width: 70%;
+}
+#avoid aside{
+    margin:10px;
+    border : 3px solid #8be0ff8f;
+}
+#avoid aside button{
+    margin: 10px;
+    padding: 10px;
+    background-color: #40b7f38f;
+    color : solid black;
+    border-radius: 50px;
+    transition: 1ms;
+}
+#avoid aside button:hover{        /* cuando el mouse pase por encima, que es lo que hace*/
+    background-color: #45fe38;
+    color: white;
+}
+#avoid section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+#avoid section article{
+    border: 3px solid #ffffff8f;
+    background-color: #8be0ff8f;
+    border-radius: 10px;
+    margin: 10px;
+    height: 20vh;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+    
+#avoid aside img{
+    animation: spin 2s infinite;
+    animation: beat 1s infinite;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px){
+    h1{
+        background-color: #fc97688f;  /* Sirve para cuando se vaya haciendo mas pequeño, el color del H1 cambie dependiendo del tamaño */
+    }
+}
+@media (max-width: 500px){
+    h1{
+        background-color: #05ff508f;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
